@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/Noite-Estrelada.-Vincent-van-Gogh.jpg);
+    background-size: cover;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background: rgba(240, 236, 7, 0.7);
+    border: solid 2px blue;
+    border-radius: .5rem;
+    padding: 1rem;
+    gap: 5px;
+}
+
+.title {
+    text-align: center;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+.visor {
+    padding: 0.2rem;
+    border: solid 1px blue;
+    border-radius: 0.5rem;
+    height: 14vh;
+    text-align: right;
+    text-transform: uppercase;
+    background-color: #ffffff77;
+}
+
+.teclas {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.teclas ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.teclas ul span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px blue;
+    border-radius: 0.5rem;
+    height: 6vh;
+    width: 100%;
+    background-color: #ffffff77;
+    font-weight: 500;
+}
+
+.teclas ul span:hover {
+    cursor: pointer;
+    background-color: rgb(56, 56, 196);
+}

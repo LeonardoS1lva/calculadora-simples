@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <main class="calculadora">
+        <h1 class="title">Calculadora</h1>
+        <div class="visor">
+            <h2 id="mostra-conta"></h2>
+            <h1 class="resultado" id="resultado">0</h1>
+        </div>
+        <div class="teclas">
+            <ul>
+                <span onclick="clearAll()">CE</span>
+                <span onclick="clean()">C</span>
+                <span onclick="back()">APAGAR</span>
+                <span onclick="insert('/')">/</span>
+            </ul>
+            <ul>
+                <span onclick="insert('7')">7</span>
+                <span onclick="insert('8')">8</span>
+                <span onclick="insert('9')">9</span>
+                <span onclick="insert('*')">X</span>
+            </ul>
+            <ul>
+                <span onclick="insert('4')">4</span>
+                <span onclick="insert('5')">5</span>
+                <span onclick="insert('6')">6</span>
+                <span onclick="insert('-')">-</span>
+            </ul>
+            <ul>
+                <span onclick="insert('1')">1</span>
+                <span onclick="insert('2')">2</span>
+                <span onclick="insert('3')">3</span>
+                <span onclick="insert('+')">+</span>
+            </ul>
+            <ul>
+                <span onclick="transformaNegativo()">+/-</span>
+                <span onclick="insert('0')">0</span>
+                <span onclick="insert('.')">,</span>
+                <span onclick="calcular()">=</span>
+            </ul>
+        </div>
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
