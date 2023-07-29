@@ -1,6 +1,6 @@
 # Calculadora Simples
 
-![Calculadora Preview](./images/preview.png)
+![Calculadora Preview](./src/images/preview.png)
 
 ## Descrição do Projeto
 
